@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.insulin-form-wrapper {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+.insulin-form-card {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: 24px;
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+  max-width: 560px;
+}
+
+/* Header */
+.insulin-form-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bfdbfe;
+}
+
+.insulin-form-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.insulin-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0;
+}
+
+.insulin-form-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 2px 0 0;
+}
+
+/* Grid Layout */
+.insulin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.insulin-form-field--full {
+  grid-column: 1 / -1;
+}
+
+/* Fields */
+.insulin-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.insulin-form-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.insulin-form-input,
+.insulin-form-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #dbeafe;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #1e3a5f;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.insulin-form-input:focus,
+.insulin-form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Divider */
+.insulin-form-divider {
+  height: 1px;
+  background: #dbeafe;
+  grid-column: 1 / -1;
+}
+
+/* Section label */
+.insulin-form-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  grid-column: 1 / -1;
+  margin-bottom: -4px;
+}
+
+/* Submit button */
+.insulin-form-submit {
+  margin-top: 24px;
+  width: 100%;
+  padding: 13px 24px;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.insulin-form-submit:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.insulin-form-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.insulin-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
